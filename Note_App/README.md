@@ -3,7 +3,10 @@
 My first app with flutter, note-app with db local and minimal to-do list
 
 # Screen
-
+<img src="https://github.com/Stelk-dev/Note_App/blob/main/Note_App/Screen/1.jpg" width=200>
+<img src="https://github.com/Stelk-dev/Note_App/blob/main/Note_App/Screen/2.jpg" width=200>
+<img src="https://github.com/Stelk-dev/Note_App/blob/main/Note_App/Screen/4.jpg" width=200>
+<img src="https://github.com/Stelk-dev/Note_App/blob/main/Note_App/Screen/3.jpg" width=200>
 
 
 ## Getting Started
