@@ -121,7 +121,7 @@ class _MyAppState extends State<MyApp> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        'Eliminare',
+                        'Delete',
                         style: TextStyle(color: Colors.red, fontSize: 25),
                       ),
                     ],
@@ -232,12 +232,12 @@ class _MyAppState extends State<MyApp> {
               context: context,
               builder: (BuildContext context) {
                 return AlertDialog(
-                  title: Text('Crea nota'),
+                  title: Text('Create note'),
                   content: SingleChildScrollView(
                     child: ListBody(
                       children: <Widget>[
                         TextField(
-                          decoration: InputDecoration(hintText: 'Titolo'),
+                          decoration: InputDecoration(hintText: 'Title'),
                           onChanged: (value) {
                             setState(() {
                               title = value;
@@ -252,7 +252,7 @@ class _MyAppState extends State<MyApp> {
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      child: Text('Annulla'),
+                      child: Text('Go back'),
                       color: Colors.red,
                     ),
                     //Creazione Nota
@@ -264,7 +264,7 @@ class _MyAppState extends State<MyApp> {
                           boxHive.add([
                             title != null
                                 ? title
-                                : 'Nota ' + boxHive.length.toString(),
+                                : 'Note ' + boxHive.length.toString(),
                             content = '',
                             DateTime.now().day,
                             month,
@@ -272,7 +272,7 @@ class _MyAppState extends State<MyApp> {
                           ]);
                         });
                       },
-                      child: Text('Crea'),
+                      child: Text('Create'),
                       color: Colors.blue,
                     )
                   ],
@@ -352,12 +352,12 @@ class _MyAppState extends State<MyApp> {
               context: context,
               builder: (BuildContext context) {
                 return AlertDialog(
-                  title: Text('Crea cose da fare'),
+                  title: Text('Create to-do list'),
                   content: SingleChildScrollView(
                     child: ListBody(
                       children: <Widget>[
                         TextField(
-                          decoration: InputDecoration(hintText: 'Titolo'),
+                          decoration: InputDecoration(hintText: 'Title'),
                           onChanged: (value) {
                             setState(() {
                               title = value;
@@ -372,7 +372,7 @@ class _MyAppState extends State<MyApp> {
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
-                      child: Text('Annulla'),
+                      child: Text('Go back'),
                       color: Colors.red,
                     ),
                     //Creazione Nota
@@ -384,7 +384,7 @@ class _MyAppState extends State<MyApp> {
                           boxHiveList.add([
                             title != null
                                 ? title
-                                : 'Cosa da fare ' + boxHive.length.toString(),
+                                : 'To do ' + boxHive.length.toString(),
                             false,
                             DateTime.now().day,
                             month,
@@ -392,7 +392,7 @@ class _MyAppState extends State<MyApp> {
                           ]);
                         });
                       },
-                      child: Text('Crea'),
+                      child: Text('Create'),
                       color: Colors.blue,
                     )
                   ],
@@ -419,7 +419,7 @@ class _MyAppState extends State<MyApp> {
               body: boxHive.length == 0
                   ? Center(
                       child: Text(
-                        'Aggiungi nota',
+                        'Add note',
                         style: TextStyle(fontSize: 30),
                       ),
                     )
@@ -439,7 +439,7 @@ class _MyAppState extends State<MyApp> {
                     color: Colors.lightBlueAccent,
                     child: Center(
                       child: Text(
-                        'Aggiungi cose da fare',
+                        'Add to-do list',
                         style: TextStyle(fontSize: 25),
                       ),
                     ),
