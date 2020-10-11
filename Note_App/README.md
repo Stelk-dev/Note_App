@@ -1,6 +1,9 @@
 # Note_App
 
-A new Flutter project.
+My first app with flutter, note-app with db local and minimal to-do list
+
+# Screen
+![alt text](https://github.com/[Stelk-dev]/[Note_App]/blob/[Main]/Screen/1.jpg?raw=true)
 
 ## Getting Started
 
